@@ -11,8 +11,6 @@ iris = load_iris()
 print(dir(iris))        # ['DESCR', 'data', 'feature_names', 'filename', 'target', 'target_names']
 X = iris.data
 print(X.shape)      # (150, 4) 所有的数据都在data中，一共有150个数据点(150行)，每个数据点有四个特征值(4列)
-
-
 X = X - X.mean(axis=0)
 # numpy.mean(a, axis=None, dtype=None, out=None, keepdims=False) axis=0时表示纵轴平均，输出的是格式（1，x）的格式
 
@@ -61,4 +59,3 @@ plt.ylabel('variance rtion')
 plt.xlabel('principal components')
 plt.legend(loc='best')
 plt.show()
-
