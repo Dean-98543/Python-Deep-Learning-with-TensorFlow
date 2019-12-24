@@ -61,3 +61,4 @@ plt.ylabel('variance rtion')
 plt.xlabel('principal components')
 plt.legend(loc='best')
 plt.show()
+
